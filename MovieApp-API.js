@@ -1,13 +1,7 @@
 // index.js
 const express = require('express');
 const app = express();
-
-// Demo movie data
-const movies = [
-  { id: 1, title: 'Inception' },
-  { id:2, title: 'Matric'}
-
-];
+const movies = require('./data')
 
 app.use(express.json());
 
